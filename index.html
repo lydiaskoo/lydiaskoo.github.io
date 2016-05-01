@@ -12,6 +12,13 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		 <style type="text/css">
+	      html, body { height: 100%; margin: 0; padding-left: 2.25em; }
+	      #map { 
+	      	height: 500px;
+	      	width: 500px;
+	      }
+	    </style>
 	</head>
 	<body id="top">
 
@@ -35,7 +42,7 @@
 						<p>It was January 4th, a week after Chiristmas.  </p>
 						
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="#two" class="button">Learn More</a></li>
 						</ul>
 					</section>
 
@@ -54,23 +61,13 @@
 								<p>Guess what I'm watching!</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<a href="images/doong5.jpg" class="image fit thumb"><img src="images/doong5.jpg" alt="" /></a>
 								<h3>Tortor metus commodo</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<a href="images/doong6.jpg" class="image fit thumb"><img src="images/doong6.jpg" alt="" /></a>
 								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 						</div>
@@ -114,6 +111,19 @@
 									</li>
 								</ul>
 							</div>
+							<div id="map"></div>
+						    <script type="text/javascript">
+								var map;
+								function initMap() {
+								  map = new google.maps.Map(document.getElementById('map'), {
+								    center: {lat: -34.397, lng: 150.644},
+								    zoom: 8
+								  });
+								}
+						    </script>
+						    <script async defer
+						      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6wjcM6f7DHGrustfoLldgG-nZnmbYugc&callback=initMap">
+						    </script>
 						</div>
 					</section>
 
