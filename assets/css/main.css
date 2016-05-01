@@ -278,7 +278,7 @@
 		margin: -2.5em 0 -1px -2.5em;
 	}
 
-	.row.\32 00\25 > * {
+	.\32 00\25 > * {
 		padding: 0 0 0 5em;
 	}
 
@@ -1524,7 +1524,6 @@
 
 		.\-6u\28xsmall\29 {
 			margin-left: 50%;
-			height: 131px;
 			background-size: cover;
 			background-position: center;
 		}
@@ -1550,7 +1549,6 @@
 		}
 
 	}
-
 /* Basic */
 
 	body {
@@ -2079,6 +2077,9 @@
 
 			.image.fit img {
 				width: 100%;
+				height: 135px;
+				background-size: cover;
+				background-position: center;
 			}
 
 		.image.avatar {
@@ -3107,5 +3108,5 @@
 				margin-left: 0;
 				padding-left: 0;
 			}
-
+	
 	}
